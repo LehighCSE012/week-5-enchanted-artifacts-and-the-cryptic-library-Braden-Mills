@@ -36,7 +36,7 @@ def acquire_item(inventory, item):
     """ Adds an item to the player's inventory """
     if item not in inventory:
         inventory.append(item)
-        print(f"You have acquired: {item}")
+        print(f"You acquired a {item}")
     else:
         print(f"You already have {item}.")
     return inventory
