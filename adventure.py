@@ -99,7 +99,7 @@ def check_for_treasure(has_treasure):
     else:
         print("The monster did not have the treasure. You continue your journey.")
 
-def enter_dungeon(player_stats, inventory, dungeon_rooms, clues, artifacts):
+def enter_dungeon(player_stats, inventory, dungeon_rooms, clues):
     """ Determines the dungeon rooms and cryptic library """
     for room in dungeon_rooms:
         room_description, item, challenge_type, challenge_outcome = room
