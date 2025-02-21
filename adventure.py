@@ -190,10 +190,8 @@ def main():
                 player_stats, inventory, dungeon_rooms, clues)
             print("\n--- Game End ---")
             display_player_status(player_stats)
-            
             print("Final Inventory:")
             display_inventory(inventory)
-
             print("Clues:")
             if clues:
                 for clue in clues:
