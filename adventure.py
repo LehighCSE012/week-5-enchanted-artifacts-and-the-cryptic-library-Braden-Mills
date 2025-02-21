@@ -32,6 +32,15 @@ def find_clue(clues, new_clue):
         print(f"You discovered a new clue: {new_clue}")
     return clues
 
+def acquire_item(inventory, item):
+    """ Adds an item to the player's inventory """
+    if item not in inventory:
+        inventory.append(item)
+        print(f"You have acquired: {item}")
+    else:
+        print(f"You already have {item}.")
+    return inventory
+
 def display_inventory(inventory):
     """ Displays the player's inventory """
     num = 1
